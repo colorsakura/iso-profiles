@@ -28,7 +28,7 @@ jobs:
     strategy:
       matrix:
         REPO: ["https://github.com/colorsakura/iso-profiles"]
-        EDITION: [i3]
+        EDITION: [community/i3]
         BRANCH: [stable]
         SCOPE: [full]
     steps:
