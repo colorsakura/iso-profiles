@@ -1,0 +1,61 @@
+name: iso_build
+
+on:
+  push:
+    paths:
+      - 'VERSION'
+  # schedule:
+  #  - cron:  '30 2 * * *'
+
+jobs:
+  prepare-release:
+    runs-on: ubuntu-20.04
+    steps:
+      - 
+        uses: styfle/cancel-workflow-action@0.9.0
+        with:
+          access_token: ${{ github.token }}
+      - 
+        id: time
+        uses: nanzm/get-time-action@v1.1
+        with:
+          format: 'YYYYMMDDHHmm'
+    outputs:
+      release_tag: ${{ steps.time.outputs.time }}
+  build-release:
+    runs-on: ubuntu-20.04
+    needs: [prepare-release]
+    strategy:
+      matrix:
+        REPO: ["https://github.com/colorsakura/iso-profiles"]
+        EDITION: [i3]
+        BRANCH: [stable]
+        SCOPE: [full]
+    steps:
+      - 
+        uses: styfle/cancel-workflow-action@0.9.0
+        with:
+          access_token: ${{ github.token }}
+      - 
+        id: time
+        uses: nanzm/get-time-action@v1.1
+        with:
+          format: 'YY.MM'   
+      -
+        name: image-build-upload
+        uses: colorsakura/manjaro-iso-action@main
+        with:
+          iso-profiles-repo: ${{ matrix.repo }}
+          edition: ${{ matrix.edition }}
+          branch: ${{ matrix.branch }}
+          scope: ${{ matrix.scope }}
+          version: ${{ steps.time.outputs.time }}
+          kernel: linux517
+          code-name: "FishBox"
+          release-tag: ${{ needs.prepare-release.outputs.release_tag }}
+      -
+        name: rollback
+        if: ${{ failure() || cancelled() }}
+        run: |
+          echo ${{ github.token }} | gh auth login --with-token
+          gh release delete ${{ needs.prepare-release.outputs.release_tag }} -y --repo ${{ github.repository }}
