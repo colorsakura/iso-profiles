@@ -13,7 +13,6 @@ binutils
 bison
 >extra blueman
 >extra bluez-utils
-bmenu
 >extra cantarell-fonts
 clipit
 >extra deluge
@@ -83,7 +82,6 @@ mlocate
 mobile-broadband-provider-info
 moc
 modemmanager
-morc_menu
 mousepad
 >multilib lib32-flex
 >multilib lib32-mesa-demos
@@ -100,7 +98,6 @@ ntp
 openresolv
 openssh
 p7zip
-palemoon-bin
 pamac
 patch
 patchutils
@@ -159,3 +156,5 @@ xdg-user-dirs
 xorg-server
 >extra yay
 zensu
+
+#fcitx5
