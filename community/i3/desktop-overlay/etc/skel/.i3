@@ -1,0 +1,1 @@
+/home/chauncey/project/config/i3
