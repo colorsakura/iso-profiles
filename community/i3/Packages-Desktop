@@ -107,7 +107,7 @@ pkg-config
 polkit-gnome
 >extra poppler-data
 powertop
-qt5ct
+qt6ct
 ranger
 sbxkb
 screenfetch
@@ -170,3 +170,8 @@ fcitx5-qt
 fcitx5-gtk
 fcitx5-pinyin-zhwiki
 fcitx5-material-color
+
+pulseaudio-equalizer-ladspa
+pulseaudio
+pavucontrol-qt
+pulseaudio-bluetooth
