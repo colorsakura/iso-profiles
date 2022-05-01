@@ -54,6 +54,7 @@ htop
 inxi
 json-c
 kvantum-manjaro
+alacritty
 >multilib lib32-flex
 >extra libdvdcss
 >extra libgpod
@@ -99,9 +100,9 @@ openresolv
 openssh
 p7zip
 pamac
+nemo
 patch
 patchutils
-pcmanfm
 perl-file-mimeinfo
 pkg-config
 polkit-gnome
@@ -151,9 +152,9 @@ xorg-xhost
 xorg-xinit
 xorg-xkill
 xorg-xprop
-xterm
 xdg-user-dirs
 xorg-server
+flameshot
 >extra yay
 zensu
 
