@@ -100,7 +100,7 @@ openresolv
 openssh
 p7zip
 pamac
-nemo
+nemo  # 
 patch
 patchutils
 perl-file-mimeinfo
@@ -155,7 +155,19 @@ xorg-xprop
 xdg-user-dirs
 xorg-server
 flameshot
+picom
+fehk
 >extra yay
 zensu
+noto-fonts-cjk
+adobe-source-han-sans-cn-fonts
+adobe-source-han-serif-cn-fonts
 
 #fcitx5
+fcitx5
+fcitx5-configtool
+fcitx5-chinese-addons
+fcitx5-qt
+fcitx5-gtk
+fcitx5-pinyin-zhwiki
+fcitx5-material-color
