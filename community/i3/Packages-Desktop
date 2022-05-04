@@ -51,7 +51,6 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 >extra hexchat
-htop
 inxi
 json-c
 kvantum-manjaro
@@ -126,10 +125,8 @@ ttf-dejavu
 >extra ttf-liberation
 >basic ufw
 upower
-vi
 >extra vibrancy-icons-teal
 viewnior
-vim
 >extra vlc
 volumeicon
 w3m
@@ -172,7 +169,10 @@ fcitx5-gtk
 fcitx5-pinyin-zhwiki
 fcitx5-material-color
 
+#audio
 pulseaudio-equalizer-ladspa
 pulseaudio
 pavucontrol-qt
 pulseaudio-bluetooth
+
+timeshift
