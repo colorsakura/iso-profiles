@@ -72,8 +72,6 @@ memtest86+
 mhwd
 mhwd-db
 mkinitcpio-openswap
-nano
-nano-syntax-highlighting
 nfs-utils
 ntfs-3g
 os-prober
@@ -89,7 +87,7 @@ systemd
 systemd-fsck-silent
 texinfo
 usbutils
-vi
+vim
 wget
 which
 wpa_supplicant
