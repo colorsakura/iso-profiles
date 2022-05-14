@@ -54,7 +54,7 @@ gvfs-smb
 inxi
 json-c
 kvantum-manjaro
-alacritty
+
 >multilib lib32-flex
 >extra libdvdcss
 >extra libgpod
@@ -181,4 +181,5 @@ pavucontrol-qt
 pulseaudio-bluetooth
 
 # tools
-timeshift
+alacritty   # terminal
+timeshift   # backup tool
