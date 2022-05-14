@@ -183,3 +183,4 @@ pulseaudio-bluetooth
 # tools
 alacritty   # terminal
 timeshift   # backup tool
+rofi        # 启动器
