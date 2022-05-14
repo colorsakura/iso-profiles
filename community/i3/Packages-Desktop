@@ -116,13 +116,9 @@ speedtest-cli
 >basic squashfs-tools
 >extra subversion
 syslog-ng
-terminus-font
+
 tree
-ttf-dejavu
->extra ttf-droid
->extra ttf-inconsolata
->extra ttf-indic-otf
->extra ttf-liberation
+
 >basic ufw
 upower
 >extra vibrancy-icons-teal
@@ -156,11 +152,20 @@ picom
 feh
 >extra yay
 zensu
+
+# fonts
+terminus-font
+ttf-dejavu
+ttf-jetbrains-mono
 noto-fonts-cjk
 adobe-source-han-sans-cn-fonts
 adobe-source-han-serif-cn-fonts
+>extra ttf-droid
+>extra ttf-inconsolata
+>extra ttf-indic-otf
+>extra ttf-liberation
 
-#fcitx5
+# fcitx5
 fcitx5
 fcitx5-configtool
 fcitx5-chinese-addons
@@ -169,10 +174,11 @@ fcitx5-gtk
 fcitx5-pinyin-zhwiki
 fcitx5-material-color
 
-#audio
+# audio
 pulseaudio-equalizer-ladspa
 pulseaudio
 pavucontrol-qt
 pulseaudio-bluetooth
 
+# tools
 timeshift
