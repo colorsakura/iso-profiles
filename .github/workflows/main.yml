@@ -50,7 +50,7 @@ jobs:
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
           version: ${{ steps.time.outputs.time }}
-          kernel: linux517
+          kernel: linux519
           code-name: "FishBox"
           release-tag: ${{ needs.prepare-release.outputs.release_tag }}
       -
